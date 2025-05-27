@@ -27,6 +27,32 @@ Digite a temperatura em Celsius: 25
 25.00°C = 77.00°F
 25.00°C = 298.15K
 ```
+## Builds
+- Para Windows (64 bits):
+```
+GOOS=windows GOARCH=amd64 go build -o conversor.exe
+```
+
+- Para Mac (64 bits):
+```
+GOOS=darwin GOARCH=amd64 go build -o conversor-mac
+```
+
+- Para Mac (Apple Silicon/ARM):
+```
+GOOS=darwin GOARCH=arm64 go build -o conversor-mac-arm
+```
+
+- Para Linux (64 bits):
+```
+GOOS=linux GOARCH=amd64 go build -o conversor-linux
+```
+
+- Para Linux (ARM 64 bits):
+```
+GOOS=linux GOARCH=arm64 go build -o conversor-linux-arm
+```
+
 
 ## Licença
 
